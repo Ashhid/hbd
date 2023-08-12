@@ -161,3 +161,52 @@ body {
     transform: translateX(1);
   }
 }
+
+/* Your existing CSS */
+
+/* Add a rule for button animation */
+button {
+  /* ... your existing button styles ... */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a rule for button animation on hover and click */
+button:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly decrease size on click */
+}
+
+/* Your existing CSS */
+
+/* Add styles for the firework */
+/* Your existing CSS */
+
+/* Add styles for the firework */
+.firework {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("./pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png"); /* Replace with your heart image path */
+  background-size: cover;
+  animation: fireworkAnimation 1s ease-out;
+}
+
+@keyframes fireworkAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+h1,
+p,
+button {
+  font-family: "Courier New", Courier, monospace;
+}
